@@ -1,0 +1,1101 @@
+[ {
+  "cmd" : "clear",
+  "elapsedMs" : 330,
+  "error" : false,
+  "feedback" : "All student records have been cleared!",
+  "students" : [ ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 0 displayed", "null: Student Details", "emptySelection: Select a student to view their details.", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : -1,
+  "saved" : {
+    "students" : [ ]
+  }
+}, {
+  "cmd" : "add n/Valid Alias m/A1234567B g/T01 e/student+_tutorial@example.com",
+  "elapsedMs" : 194,
+  "error" : true,
+  "feedback" : "Emails should be of the format local-part@domain and adhere to the following constraints:\n1. The local-part should only contain alphanumeric characters and these special characters, excluding the parentheses, (+_.-). The local-part may not start or end with any special characters.\n2. The local-part is followed by an '@' and then a domain name. The domain name is made up of domain labels separated by periods.\nThe domain name must:\n    - end with a domain label at least 2 characters long\n    - have each domain label start and end with alphanumeric characters\n    - have each domain label consist of alphanumeric characters, separated only by hyphens, if any.",
+  "students" : [ ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 0 displayed", "null: Student Details", "emptySelection: Select a student to view their details.", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : -1,
+  "saved" : {
+    "students" : [ ]
+  },
+  "countPass" : true,
+  "errorPass" : true
+}, {
+  "cmd" : "add n/Normal Alias m/A1234568C g/T01 e/student+tutorial@example.com",
+  "elapsedMs" : 215,
+  "error" : false,
+  "feedback" : "New student added: Normal Alias; Matric: A1234568C; Group: T01; Phone: Not provided; Email: student+tutorial@example.com; Address: Not provided; Remark: Not provided; Tags: ",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 1 displayed", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "emptySelection: Select a student to view their details.", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : -1,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    } ]
+  },
+  "countPass" : true,
+  "errorPass" : true
+}, {
+  "cmd" : "add n/Boundary Valid m/A1234569D g/T02 e/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+  "elapsedMs" : 200,
+  "error" : false,
+  "feedback" : "New student added: Boundary Valid; Matric: A1234569D; Group: T02; Phone: Not provided; Email: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com; Address: Not provided; Remark: Not provided; Tags: ",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 2 displayed", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "emptySelection: Select a student to view their details.", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : -1,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    } ]
+  },
+  "countPass" : true,
+  "errorPass" : true
+}, {
+  "cmd" : "add n/Boundary Invalid m/A1234570E g/T02 e/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+  "elapsedMs" : 195,
+  "error" : false,
+  "feedback" : "New student added: Boundary Invalid; Matric: A1234570E; Group: T02; Phone: Not provided; Email: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com; Address: Not provided; Remark: Not provided; Tags: ",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 3 displayed", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "emptySelection: Select a student to view their details.", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : -1,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    } ]
+  }
+}, {
+  "cmd" : "view 3",
+  "elapsedMs" : 215,
+  "error" : false,
+  "feedback" : "Showing details for: Boundary Invalid (A1234570E)",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 3 displayed", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 3. ", "name: Boundary Invalid", "matricNumber: Matric: A1234570E", "tutorialGroup: Group: T02", "followUp: Follow-up: Not required", "remark: Remark: Not provided", "phone: Phone: Not provided", "address: Address: Not provided", "email: Email: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 2,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    } ]
+  }
+}, {
+  "cmd" : "add n/Contact Student m/A1234571F g/T03 p/91234567 e/contact@example.com a/10 College Road",
+  "elapsedMs" : 214,
+  "error" : false,
+  "feedback" : "New student added: Contact Student; Matric: A1234571F; Group: T03; Phone: 91234567; Email: contact@example.com; Address: 10 College Road; Remark: Not provided; Tags: ",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : null,
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 3. ", "name: Boundary Invalid", "matricNumber: Matric: A1234570E", "tutorialGroup: Group: T02", "followUp: Follow-up: Not required", "remark: Remark: Not provided", "phone: Phone: Not provided", "address: Address: Not provided", "email: Email: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 2,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    } ]
+  }
+}, {
+  "cmd" : "view 4",
+  "elapsedMs" : 206,
+  "error" : false,
+  "feedback" : "Showing details for: Contact Student (A1234571F)",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : null,
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Not required", "remark: Remark: Not provided", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    } ]
+  }
+}, {
+  "cmd" : "remark 4 r/Needs consultation",
+  "elapsedMs" : 211,
+  "error" : false,
+  "feedback" : "Updated remark for student: Contact Student; Matric: A1234571F; Group: T03; Phone: 91234567; Email: contact@example.com; Address: 10 College Road; Remark: Needs consultation; Tags: ",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Not required", "remark: Remark: Needs consultation", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    } ]
+  }
+}, {
+  "cmd" : "followup 4 on",
+  "elapsedMs" : 202,
+  "error" : false,
+  "feedback" : "Marked for follow-up: Contact Student; Matric: A1234571F; Group: T03; Phone: 91234567; Email: contact@example.com; Address: 10 College Road; Remark: Needs consultation; Tags: ",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Required", "remark: Remark: Needs consultation", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "edit 4 p/",
+  "elapsedMs" : 198,
+  "error" : true,
+  "feedback" : "Phone numbers should only contain digits, and should be at least 3 digits long",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Required", "remark: Remark: Needs consultation", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "edit 4 e/",
+  "elapsedMs" : 195,
+  "error" : true,
+  "feedback" : "Emails should be of the format local-part@domain and adhere to the following constraints:\n1. The local-part should only contain alphanumeric characters and these special characters, excluding the parentheses, (+_.-). The local-part may not start or end with any special characters.\n2. The local-part is followed by an '@' and then a domain name. The domain name is made up of domain labels separated by periods.\nThe domain name must:\n    - end with a domain label at least 2 characters long\n    - have each domain label start and end with alphanumeric characters\n    - have each domain label consist of alphanumeric characters, separated only by hyphens, if any.",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Required", "remark: Remark: Needs consultation", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "edit 4 a/",
+  "elapsedMs" : 196,
+  "error" : true,
+  "feedback" : "Addresses can take any values, and should not be blank",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Required", "remark: Remark: Needs consultation", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "view 1",
+  "elapsedMs" : 200,
+  "error" : false,
+  "feedback" : "Showing details for: Normal Alias (A1234568C)",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 1. ", "name: Normal Alias", "matricNumber: Matric: A1234568C", "tutorialGroup: Group: T01", "followUp: Follow-up: Not required", "remark: Remark: Not provided", "phone: Phone: Not provided", "address: Address: Not provided", "email: Email: student+tutorial@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 0,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "delete 4",
+  "elapsedMs" : 200,
+  "error" : false,
+  "feedback" : "Selected student: Contact Student; Matric: A1234571F; Group: T03; Phone: 91234567; Email: contact@example.com; Address: 10 College Road; Remark: Needs consultation; Tags: \nTo delete this student, enter: delete 4 confirm\nIf the displayed list changes, check the student's index again.",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 1. ", "name: Normal Alias", "matricNumber: Matric: A1234568C", "tutorialGroup: Group: T01", "followUp: Follow-up: Not required", "remark: Remark: Not provided", "phone: Phone: Not provided", "address: Address: Not provided", "email: Email: student+tutorial@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 0,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "view 4",
+  "elapsedMs" : 197,
+  "error" : false,
+  "feedback" : "Showing details for: Contact Student (A1234571F)",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Needs consultation",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Required", "remark: Remark: Needs consultation", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Needs consultation",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "remark 4 r/Updated after failed clear",
+  "elapsedMs" : 203,
+  "error" : false,
+  "feedback" : "Updated remark for student: Contact Student; Matric: A1234571F; Group: T03; Phone: 91234567; Email: contact@example.com; Address: 10 College Road; Remark: Updated after failed clear; Tags: ",
+  "students" : [ {
+    "name" : "Normal Alias",
+    "matric" : "A1234568C",
+    "group" : "T01",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Valid",
+    "matric" : "A1234569D",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Boundary Invalid",
+    "matric" : "A1234570E",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  }, {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Updated after failed clear",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 4 displayed", "id: 4.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "id: 3.", "name: Boundary Invalid", "matricNumber: A1234570E", "tutorialGroup: T02", "id: 2.", "name: Boundary Valid", "matricNumber: A1234569D", "tutorialGroup: T02", "id: 1.", "name: Normal Alias", "matricNumber: A1234568C", "tutorialGroup: T01", "null: Student Details", "id: 4. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Required", "remark: Remark: Updated after failed clear", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 3,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Updated after failed clear",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  }
+}, {
+  "cmd" : "followups",
+  "elapsedMs" : 204,
+  "error" : false,
+  "feedback" : "1 student(s) requiring follow-up listed!",
+  "students" : [ {
+    "name" : "Contact Student",
+    "matric" : "A1234571F",
+    "group" : "T03",
+    "remark" : "Updated after failed clear",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 1 displayed", "id: 1.", "name: Contact Student", "matricNumber: A1234571F", "tutorialGroup: T03", "followUp: Follow-up required", "null: Student Details", "id: 1. ", "name: Contact Student", "matricNumber: Matric: A1234571F", "tutorialGroup: Group: T03", "followUp: Follow-up: Required", "remark: Remark: Updated after failed clear", "phone: Phone: 91234567", "address: Address: 10 College Road", "email: Email: contact@example.com", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 0,
+  "saved" : {
+    "students" : [ {
+      "name" : "Normal Alias",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : "student+tutorial@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Valid",
+      "matricNumber" : "A1234569D",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Boundary Invalid",
+      "matricNumber" : "A1234570E",
+      "tutorialGroup" : "T02",
+      "phone" : null,
+      "email" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+      "address" : null,
+      "remark" : null,
+      "tags" : [ ],
+      "requiresFollowUp" : false
+    }, {
+      "name" : "Contact Student",
+      "matricNumber" : "A1234571F",
+      "tutorialGroup" : "T03",
+      "phone" : "91234567",
+      "email" : "contact@example.com",
+      "address" : "10 College Road",
+      "remark" : "Updated after failed clear",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    } ]
+  },
+  "countPass" : true,
+  "errorPass" : true
+} ]

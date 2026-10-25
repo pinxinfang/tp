@@ -1,0 +1,20 @@
+Downloaded 2026-10-25 from:
+https://github.com/AY2627S1-CS2103T-T13-4/tp/releases/download/v1.4/TutorLink.jar
+
+shasum -a 256 TutorLink.jar
+61462cbb34c3b7c8047904c8d000e6e759270dcb27a313a41d0581c4784aec5d  TutorLink.jar
+
+Entry in the release's downloaded SHA256SUMS.txt:
+7263ec387e0db835832fc96fca7bcf907f3d7ce49ca7ea31ec18b115890954da  TutorLink.jar
+
+Current GitHub asset metadata:
+Asset ID: 665883048
+Uploaded: 2026-10-22T12:55:19Z
+Digest: sha256:61462cbb34c3b7c8047904c8d000e6e759270dcb27a313a41d0581c4784aec5d
+
+Checksum manifest metadata:
+Asset ID: 665618696
+Uploaded: 2026-10-22T11:15:56Z
+SHA-256: 8a1007845f3ce8a7603ab3477bad6e8c3f509adbaf0007966cf9b99092e70ca6
+
+No claim is made that this indicates a malicious change. The metadata shows that the JAR was replaced after the checksum manifest was uploaded.

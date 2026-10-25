@@ -1,0 +1,121 @@
+[ {
+  "cmd" : "followups",
+  "error" : false,
+  "feedback" : "1 student(s) requiring follow-up listed!",
+  "students" : [ {
+    "name" : "Alpha Student",
+    "matric" : "A1234567B",
+    "group" : "T01",
+    "remark" : "Persisted remark",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 1 displayed", "id: 1.", "name: Alpha Student", "matricNumber: A1234567B", "tutorialGroup: T01", "followUp: Follow-up required", "null: Student Details", "emptySelection: Select a student to view their details.", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : -1,
+  "saved" : {
+    "students" : [ {
+      "name" : "Alpha Student",
+      "matricNumber" : "A1234567B",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : null,
+      "address" : null,
+      "remark" : "Persisted remark",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    }, {
+      "name" : "Beta Student",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T02",
+      "phone" : "91234567",
+      "email" : "beta@example.com",
+      "address" : "10 College Road #01-02",
+      "remark" : null,
+      "tags" : [ "needsHelp" ],
+      "requiresFollowUp" : false
+    } ]
+  },
+  "countPass" : true,
+  "errorPass" : true
+}, {
+  "cmd" : "view 1",
+  "error" : false,
+  "feedback" : "Showing details for: Alpha Student (A1234567B)",
+  "students" : [ {
+    "name" : "Alpha Student",
+    "matric" : "A1234567B",
+    "group" : "T01",
+    "remark" : "Persisted remark",
+    "followup" : true
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 1 displayed", "id: 1.", "name: Alpha Student", "matricNumber: A1234567B", "tutorialGroup: T01", "followUp: Follow-up required", "null: Student Details", "id: 1. ", "name: Alpha Student", "matricNumber: Matric: A1234567B", "tutorialGroup: Group: T01", "followUp: Follow-up: Required", "remark: Remark: Persisted remark", "phone: Phone: Not provided", "address: Address: Not provided", "email: Email: Not provided", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 0,
+  "saved" : {
+    "students" : [ {
+      "name" : "Alpha Student",
+      "matricNumber" : "A1234567B",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : null,
+      "address" : null,
+      "remark" : "Persisted remark",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    }, {
+      "name" : "Beta Student",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T02",
+      "phone" : "91234567",
+      "email" : "beta@example.com",
+      "address" : "10 College Road #01-02",
+      "remark" : null,
+      "tags" : [ "needsHelp" ],
+      "requiresFollowUp" : false
+    } ]
+  },
+  "countPass" : true,
+  "errorPass" : true
+}, {
+  "cmd" : "list",
+  "error" : false,
+  "feedback" : "Listed all students.",
+  "students" : [ {
+    "name" : "Alpha Student",
+    "matric" : "A1234567B",
+    "group" : "T01",
+    "remark" : "Persisted remark",
+    "followup" : true
+  }, {
+    "name" : "Beta Student",
+    "matric" : "A1234568C",
+    "group" : "T02",
+    "remark" : null,
+    "followup" : false
+  } ],
+  "labels" : [ "null: File", "null: Help", "null: Groups", "null: Students", "studentCount: 2 displayed", "id: 1.", "name: Alpha Student", "matricNumber: A1234567B", "tutorialGroup: T01", "followUp: Follow-up required", "id: 2.", "name: Beta Student", "matricNumber: A1234568C", "tutorialGroup: T02", "null: Student Details", "id: 1. ", "name: Alpha Student", "matricNumber: Matric: A1234567B", "tutorialGroup: Group: T01", "followUp: Follow-up: Required", "remark: Remark: Persisted remark", "phone: Phone: Not provided", "address: Address: Not provided", "email: Email: Not provided", "saveLocationStatus: ./data/tutorlink.json" ],
+  "selected" : 0,
+  "saved" : {
+    "students" : [ {
+      "name" : "Alpha Student",
+      "matricNumber" : "A1234567B",
+      "tutorialGroup" : "T01",
+      "phone" : null,
+      "email" : null,
+      "address" : null,
+      "remark" : "Persisted remark",
+      "tags" : [ ],
+      "requiresFollowUp" : true
+    }, {
+      "name" : "Beta Student",
+      "matricNumber" : "A1234568C",
+      "tutorialGroup" : "T02",
+      "phone" : "91234567",
+      "email" : "beta@example.com",
+      "address" : "10 College Road #01-02",
+      "remark" : null,
+      "tags" : [ "needsHelp" ],
+      "requiresFollowUp" : false
+    } ]
+  },
+  "countPass" : true,
+  "errorPass" : true
+} ]
